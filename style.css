@@ -1,4 +1,37 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color:black;
+    
+}
 
+
+#outer {
+    background-color: white;
+    margin: 5%;
+    border-radius: 25px;
+    padding: 1%;
+}
+#wrapper {
+    display: table;
+    margin-left: 35%;
+}
+
+#text {
+    display: table-cell;
+    line-height:1.5;
+}
+
+#controls {
+    display: table-cell;
+    padding-left: 45px;
+}
+
+h1 {
+    color: grey;
+    margin-left: 35%;
+}
+
+
+#results {
+    margin-left: 35%;
+}
 
