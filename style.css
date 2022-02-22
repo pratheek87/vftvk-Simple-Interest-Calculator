@@ -27,7 +27,9 @@ body{
 
 h1 {
     color: grey;
-    margin-left: 35%;
+    margin-left: 25%;
+    font-size: 45px;
+    text-align: left;
 }
 
 
@@ -35,3 +37,15 @@ h1 {
     margin-left: 35%;
 }
 
+#footer{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#rate{
+    width: 160px;
+}
+
+.yellow{
+    background-color: yellow;
+}
