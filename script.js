@@ -30,7 +30,7 @@
 
 function compute()
 {
-    principal = document.getElementById("principal").value;
+    principal = Number(document.getElementById("principal").value);
     roi = document.getElementById("rate").value;
     years_to_calc = document.getElementById("years").value;
     console.log(principal);
@@ -39,7 +39,7 @@ function compute()
 
     text_op = document.getElementById("text_op");
 
-    if (principal && roi && years_to_calc != 0) {
+    if (principal > 0 && roi && years_to_calc != 0) {
         console.log(Number(roi) * Number(years_to_calc));
         total = Number(principal) * (1 + ((Number(roi)/100) * Number(years_to_calc)));
         year_to_display = new Date().getFullYear() + Number(years_to_calc);
@@ -47,8 +47,8 @@ function compute()
             "</mark></br> You Will receive an amount of <mark class = 'yellow'>" + parseInt(total) + "</mark> </br> in the year <mark class = 'yellow'>" +
             year_to_display + "</mark>";
     }
-    else if (!principal)
-        text_op.innerHTML = "please enter principal value";
+    else if (!principal || principal < 0)
+        text_op.innerHTML = "please enter principal value greater than 0";
     else if (!roi)
         text_op.innerHTML = "please enter Rate of Interest";
     else if (0 == years_to_calc)
