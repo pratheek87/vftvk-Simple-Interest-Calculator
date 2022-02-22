@@ -6,13 +6,15 @@ body{
 
 #outer {
     background-color: white;
-    margin: 5%;
+    margin-left:30%;
+    margin-right: 30%;
+    margin-top: 5%;
     border-radius: 25px;
     padding: 1%;
 }
 #wrapper {
     display: table;
-    margin-left: 35%;
+    margin-left: 20%;
 }
 
 #text {
@@ -27,19 +29,21 @@ body{
 
 h1 {
     color: grey;
-    margin-left: 25%;
-    font-size: 45px;
+    margin-left: 5%;
+    font-size: 30px;
     text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #results {
-    margin-left: 35%;
+    margin-left: 20%;
 }
 
 #footer{
-    margin-top: 5%;
-    margin-left: 25%;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 #rate{
